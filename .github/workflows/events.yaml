@@ -1,12 +1,10 @@
 name: Repository Events
 on:     
     push:
-    pull_request:
+    pull_request_target:
         types: [opened, assigned, reopened, synchronize]
     issues:
-        types: [opened]
-    milestone:
-         types: [closed]
+        types: [opened]   
 jobs:
   checkout-test:
     runs-on: ubuntu-latest
