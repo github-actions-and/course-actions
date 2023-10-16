@@ -25,18 +25,9 @@ on:
         required: false
         type: boolean
       environment:
-        description: "Environment" 
-        type: choice
-        options:
-          - Develop
-          - Homolog
-          - Production
-  
-#    environment:
-#      description: "Environment"
-#      type: environment
-#      required: true
-
+        description: "Environment"
+        type: environment
+        required: true
 jobs:
   log-info:
     runs-on: ubuntu-latest
