@@ -24,6 +24,14 @@ on:
         description: A boolean option
         required: false
         type: boolean
+      environment:
+        description: "Environment" 
+        type: choice
+        options:
+          - Develop
+          - Homolog
+          - Production
+  
 #    environment:
 #      description: "Environment"
 #      type: environment
