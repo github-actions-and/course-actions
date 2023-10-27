@@ -14,3 +14,5 @@ runs:
   args:
     - ${{ inputs.slack_webhook }}
     - ${{ inputs.message }}
+  env:       
+        SLACK_COLOR: "#33FFFF"    
